@@ -9,13 +9,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: docker build csharp
       run: |
-        docker build -t csharp:1.0.0
-    - name: docker build nodejs
-      run: |
-        docker build -t nodejs:1.0.0
-    - name: docker build python
-      run: |
-        docker build -t python:1.0.0
-    - name: docker build golang
-      run: |
-        docker build -t golang:1.0.0
+        docker build -t aimvector/csharp:1.0.0
+ 
+      
