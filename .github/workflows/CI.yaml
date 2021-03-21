@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: docker build nodejs
-      run: docker build -t aimvector/nodejs:1.0.0 ./earning-git/test
+      run: docker build -t aimvector/nodejs:1.0.0 .
