@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: docker build csharp
-      run:  docker build . -t aimvector/csharp:1.0.0
-      
+    - name: docker pull csharp
+      run: |
+        docker pull -t aimvector/csharp:1.0.0
+    - name: docker build nodejs
+      run: |
+        docker build . -t aimvector/nodejs:1.0.0
