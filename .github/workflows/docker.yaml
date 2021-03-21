@@ -11,6 +11,6 @@ jobs:
       run: |
           docker pull aimvector/csharp:1.0.0
     - name: docker build csharp
-       run:|
+      run: |
          docker build -t aimvector/csharp:1.0.0
       
