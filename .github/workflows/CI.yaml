@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: docker pull csharp
       run: |
-        docker pull -t aimvector/csharp:1.0.0
+        docker pull aimvector/csharp:1.0.0
     - name: docker build nodejs
       run: |
-        docker build . -t aimvector/nodejs:1.0.0
+        docker build -t aimvector/nodejs:1.0.0 .
