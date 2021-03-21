@@ -12,4 +12,4 @@ jobs:
         docker pull aimvector/csharp:1.0.0
     - name: docker build nodejs
       run: |
-        docker build -t aimvector/nodejs:1.0.0 .
+        docker build -t aimvector/nodejs:1.0.0 ./test
